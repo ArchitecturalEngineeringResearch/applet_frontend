@@ -5,7 +5,7 @@
   <text style='color:{{switchoverStatus?"":"#09bb07"}}'>需求</text>
 </view>
 <swiper class='swiper'>
-  <block wx:for='{{menus}}'>
+  <block wx:for='{{menus}}' wx:key='index'>
     <swiper-item>
       <text>{{item}}</text>
     </swiper-item>

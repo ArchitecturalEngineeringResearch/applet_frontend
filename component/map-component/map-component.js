@@ -8,6 +8,7 @@ Component({
       type:Boolean,
       vaule:true,
       observer: function (oldVal){
+        //开关数据变化
         this.getData()
       }
     }
@@ -30,10 +31,10 @@ Component({
    */
   methods: {
     regionchange(e) {
-      console.log(e.type)
+
     },
     markertap(e) {
-      console.log(e.markerId)
+
     },
     controltap(e) {
       switch (e.controlId){
@@ -44,18 +45,21 @@ Component({
       }
     },
     goLocation(){
-      wx.getLocation({
-        type: 'gcj02',
-        success: (res)=>{
-          let latitude = res.latitude
-          let longitude = res.longitude
-          this.setData({
-            longitude: longitude,
-            latitude: latitude,
-          });
-          //初始化数据
-          this.initMapinfo();
-        }
+      let location = new Promise((resolve,reject)=>{
+        wx.getLocation({
+          type: 'gcj02',
+          success: resolve
+        })
+      })
+      location.then((res) => {
+        let latitude = res.latitude
+        let longitude = res.longitude
+        this.setData({
+          longitude: longitude,
+          latitude: latitude,
+        });
+        //初始化数据
+        this.initMapinfo();
       })
     },
     initMapinfo() {
@@ -74,7 +78,6 @@ Component({
       //初始化地图信息
       wx.getSystemInfo({
         success:(res)=>{
-          console.log(res.windowHeight, (res.windowHeight - res.windowHeight * 0.1) * 0.5)
           this.setData({
             controls: [{
               id: 0,
@@ -94,9 +97,6 @@ Component({
     getData(){
       if (this.data.switchoverStatus){
         this.setData({
-          markers:[]
-        })
-        this.setData({
           markers: [
             {
               iconPath: "/resource/image/map/灯泡.png",
@@ -108,7 +108,7 @@ Component({
             },
             {
               iconPath: "/resource/image/map/灯泡.png",
-              id: 1,
+              id: 2,
               latitude: this.data.latitude - 0.002,
               longitude: this.data.longitude - 0.006,
               width: 50,
@@ -116,7 +116,7 @@ Component({
             },
             {
               iconPath: "/resource/image/map/灯泡.png",
-              id: 1,
+              id: 3,
               latitude: this.data.latitude + 0.005,
               longitude: this.data.longitude - 0.002,
               width: 50,
