@@ -1,0 +1,13 @@
+<!--component/MainMenu-component/MainMenu-component.wxml-->
+<view class='switchover' bindtap='switchover'>
+  <view class='ball' style='{{switchoverStatus?"right:100%;margin-right:-50%;":"right: 0px;"}}'></view>
+  <text style='color:{{switchoverStatus?"#09bb07":""}}'>服务</text>
+  <text style='color:{{switchoverStatus?"":"#09bb07"}}'>需求</text>
+</view>
+<swiper class='swiper'>
+  <block wx:for='{{menus}}'>
+    <swiper-item>
+      <text>{{item}}</text>
+    </swiper-item>
+  </block>
+</swiper>

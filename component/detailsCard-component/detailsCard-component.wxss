@@ -1,0 +1,67 @@
+/* component/detailsCard-component/detailsCard-component.wxss */
+.details-card{
+  height: 100%;
+}
+.details-card swiper-item .view-box{
+  width: 90%;
+  border-radius: 5px;
+  margin: auto;
+  height: 90%;
+  overflow: hidden;
+  position: absolute;
+  box-shadow: 3px 3px 8px 1px rgba(0,0,0,0.5);
+  padding: 5px;
+  top: 0;
+  bottom:0;
+  left: 0;
+  right:0;
+}
+.user-info{
+  height: 50px;
+  width: 100%;
+  position: relative;
+  text-align: left; 
+}
+
+.user-info image{
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.user-info .details{
+  line-height: 50px;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 10px;
+  position: relative;
+  width: 79%;
+}
+ .user-info .details text{
+  display: block;
+  margin-left: 5px;
+  font-size: 14pt;
+  height: 29px;
+  line-height: 29px;
+  text-align: left
+} 
+ .user-info .details text:nth-child(2){
+  height: 20px;
+  font-size: 10pt;
+  line-height: 20px;
+  display: box;
+  overflow: hidden;
+} 
+.user-About{
+  height:30%;
+  margin: 2% 0;
+  text-align: left;
+  word-wrap:initial;
+  font-size: 10pt;
+  display: inline-block;
+}
+button{
+  border-radius: 50px;
+  width: 40%;
+  font-size:12px;
+}

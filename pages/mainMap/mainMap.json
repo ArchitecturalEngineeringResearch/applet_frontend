@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText":"地图搜需求",
+    "disableScroll":true,
+    "usingComponents": {
+      "map-component": "../../component/map-component/map-component",
+      "detailsCard-component": "../../component/detailsCard-component/detailsCard-component",
+      "mainMenu-component": "../../component/MainMenu-component/MainMenu-component"
+    }
+}

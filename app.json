@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/mainMap/mainMap",
+    "pages/message/message",
+    "pages/aboutMe/aboutMe",
+    "pages/listDetails/listDetails"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#888888",
+    "selectedColor": "#09bb07",
+    "list": [
+      {
+        "iconPath": "/resource/image/tabBar/地图.png",
+        "selectedIconPath": "/resource/image/tabBar/地图选中.png",
+        "pagePath": "pages/mainMap/mainMap",
+        "text": "地图"
+      },
+      {
+        "iconPath": "/resource/image/tabBar/信息.png",
+        "selectedIconPath": "/resource/image/tabBar/信息选中.png",
+        "pagePath": "pages/message/message",
+        "text": "信息"
+      },
+      {
+        "iconPath": "/resource/image/tabBar/个人信息.png",
+        "selectedIconPath": "/resource/image/tabBar/个人信息选中.png",
+        "pagePath": "pages/aboutMe/aboutMe",
+        "text": "个人"
+      }
+    ]
+  }
+}

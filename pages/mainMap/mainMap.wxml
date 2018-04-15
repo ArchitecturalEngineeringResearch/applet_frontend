@@ -1,0 +1,6 @@
+<view class='menu-box'>
+  <mainMenu-component bindblockevent="blockevent"></mainMenu-component>
+</view>
+<view class='map-box'>
+  <map-component switchoverStatus="{{switchoverStatus}}"></map-component>
+</view>

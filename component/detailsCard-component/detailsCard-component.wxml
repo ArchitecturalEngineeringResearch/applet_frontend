@@ -1,0 +1,20 @@
+<!--component/detailsCard-component/detailsCard-component.wxml-->
+<swiper class='details-card'>
+  <block wx:for='{{detailsData}}'>
+    <swiper-item>
+       <view class='view-box'>
+          <view class='user-info'>
+            <image src='{{item.chatHeads}}'></image>
+            <view class='details'>
+              <text>{{item.nickName}}</text>
+              <text>{{item.details}}</text>
+            </view>
+          </view>
+          <view class='user-About'>
+            {{item.text}}
+          </view>
+          <button type="primary">联系详谈</button>
+       </view>
+    </swiper-item>
+  </block>
+</swiper>
