@@ -22,6 +22,12 @@
         "text": "地图"
       },
       {
+        "iconPath": "/resource/image/tabBar/发布活动.png",
+        "selectedIconPath": "/resource/image/tabBar/发布活动选中.png",
+        "pagePath": "pages/mainMap/mainMap",
+        "text": "发布"
+      },      
+      {
         "iconPath": "/resource/image/tabBar/信息.png",
         "selectedIconPath": "/resource/image/tabBar/信息选中.png",
         "pagePath": "pages/message/message",
