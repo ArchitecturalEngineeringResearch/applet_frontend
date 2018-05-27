@@ -1,1 +1,48 @@
-/* pages/message/message.wxss */
+page {
+  background-color: #f8f8f8;
+}
+
+.message_chunk {
+  height: 15vh;
+  background-color: #fff;
+  margin: 5px 0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.message_chunk .left {
+  border-radius: 50%;
+  background: rebeccapurple;
+  height: 13vh;
+  width: 13vh;
+}
+
+.message_chunk .right {
+  margin-left: 5px;
+  display: flex;
+  flex-direction:column;
+  height: 100%;
+}
+
+.message_chunk .right {
+  flex-grow:1;
+  height: 100%;
+}
+.right .user{
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  flex-grow:1;
+}
+.right .content{
+  flex-grow:1;
+  color:#888888;
+  font-size: 11pt;
+}
+
+.date{
+    color:#888888;
+    font-size: 10pt;
+}

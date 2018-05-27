@@ -1,0 +1,24 @@
+/* pages/publish/publish.wxss */
+@import '../../style/weui.wxss';
+page{
+  background-color:#F8F8F8;
+}
+.publish {
+  width: 80%;
+  margin: 3vh auto 2vh auto;
+}
+.map {
+  width: 100%;
+  height: 25vh;
+}
+
+.weui-cells:before {
+  border-color:rgb(228, 231, 231);
+  border-width: 0.5px;
+}
+.weui-cells:after {
+  border-color:rgb(228, 231, 231);
+}
+.weui-cell:before {
+  border-color:rgb(228, 231, 231);
+}

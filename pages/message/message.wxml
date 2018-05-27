@@ -1,2 +1,60 @@
-<!--pages/message/message.wxml-->
-<text>pages/message/message.wxml</text>
+<view class='message_chunk'>
+  <image class='left' src="{{}}"></image>
+  <view class='right'>
+    <view class='user'>
+      <text>李耀</text>
+      <text class='date'> 10:20:10</text>
+    </view>
+    <view class='content'>
+      <text>【图片】</text>
+    </view>
+  </view>
+</view>
+<view class='message_chunk'>
+  <image class='left' src="{{}}"></image>
+  <view class='right'>
+    <view class='user'>
+      <text>Derrick</text>
+      <text class='date'>2018/5/27</text>
+    </view>
+    <view class='content'>
+      <text>Are you there?</text>
+    </view>
+  </view>
+</view>
+<view class='message_chunk'>
+  <image class='left' src="{{}}"></image>
+  <view class='right'>
+    <view class='user'>
+      <text>小叮当_速度</text>
+      <text class='date'>2018/5/30</text>
+    </view>
+    <view class='content'>
+      <text>昨天你换的管子，裂开了</text>
+    </view>
+  </view>
+</view>
+<view class='message_chunk'>
+  <image class='left' src="{{}}"></image>
+  <view class='right'>
+    <view class='user'>
+      <text>刘法昂发</text>
+      <text class='date'>2018/5/30</text>
+    </view>
+    <view class='content'>
+      <text>我把你周围的广告牌都发给你了</text>
+    </view>
+  </view>
+</view>
+<view class='message_chunk'>
+  <image class='left' src="{{}}"></image>
+  <view class='right'>
+    <view class='user'>
+      <text>达摩悉</text>
+      <text class='date'>2018/5/30</text>      
+    </view>
+    <view class='content'>
+      <text>【图片】</text>
+    </view>
+  </view>
+</view>

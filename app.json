@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/mainMap/mainMap",
+    "pages/publish/publish",
     "pages/message/message",
     "pages/aboutMe/aboutMe",
     "pages/listDetails/listDetails"
@@ -19,14 +20,14 @@
         "iconPath": "/resource/image/tabBar/地图.png",
         "selectedIconPath": "/resource/image/tabBar/地图选中.png",
         "pagePath": "pages/mainMap/mainMap",
-        "text": "地图"
+        "text": "地图找人"
       },
       {
         "iconPath": "/resource/image/tabBar/发布活动.png",
         "selectedIconPath": "/resource/image/tabBar/发布活动选中.png",
-        "pagePath": "pages/mainMap/mainMap",
+        "pagePath": "pages/publish/publish",
         "text": "发布"
-      },      
+      },
       {
         "iconPath": "/resource/image/tabBar/信息.png",
         "selectedIconPath": "/resource/image/tabBar/信息选中.png",

@@ -5,14 +5,31 @@
   width: 35%;
   right: 0;
 }
+.picker{
+  color:#353535;
+}
+.section{
+  height: 100%;
+  position: absolute;
+  width: 20%;
+  right: 0;
+  left: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 swiper-item{
   display: table;
   text-align: center;
 }
+.selected{
+  color: #09bb07
+}
 swiper-item text{
   display: table-cell;
   vertical-align: middle;
-  color: #353535;
+  color:#888888;
 }
 .switchover{
   position: absolute;

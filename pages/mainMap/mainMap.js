@@ -64,7 +64,6 @@ Page({
   
   },
   blockevent:function(e){
-    console.log(e.detail.switchoverStatus)
     this.setData({
       switchoverStatus: e.detail.switchoverStatus
     })

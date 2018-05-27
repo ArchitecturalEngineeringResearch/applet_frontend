@@ -70,8 +70,8 @@ Component({
             id: 1,
             latitude: this.data.latitude-0.001,
             longitude: this.data.longitude - 0.001,
-            width: 50,
-            height: 50
+            width: 24,
+            height: 24
           }
         ]
       });
@@ -103,24 +103,24 @@ Component({
               id: 1,
               latitude: this.data.latitude - 0.001,
               longitude: this.data.longitude - 0.001,
-              width: 50,
-              height: 50
+              width: 24,
+              height: 24
             },
             {
               iconPath: "/resource/image/map/灯泡.png",
               id: 2,
               latitude: this.data.latitude - 0.002,
               longitude: this.data.longitude - 0.006,
-              width: 50,
-              height: 50
+              width: 24,
+              height: 24
             },
             {
               iconPath: "/resource/image/map/灯泡.png",
               id: 3,
               latitude: this.data.latitude + 0.005,
               longitude: this.data.longitude - 0.002,
-              width: 50,
-              height: 50
+              width: 24,
+              height: 24
             }
           ]
         });
@@ -132,8 +132,8 @@ Component({
               id: 1,
               latitude: this.data.latitude + 0.001,
               longitude: this.data.longitude + 0.001,
-              width: 50,
-              height: 50
+              width: 24,
+              height: 24
             }
           ]
         });

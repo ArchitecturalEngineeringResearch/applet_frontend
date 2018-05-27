@@ -4,10 +4,20 @@
   <text style='color:{{switchoverStatus?"#09bb07":""}}'>服务</text>
   <text style='color:{{switchoverStatus?"":"#09bb07"}}'>需求</text>
 </view>
+<view class="section">
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+    <view class="picker">
+      {{array[index]}}
+    </view>
+  </picker>
+</view>
 <swiper class='swiper'>
-  <block wx:for='{{menus}}' wx:key='index'>
-    <swiper-item>
-      <text>{{item}}</text>
+  <block wx:for='{{menus}}' wx:key='{{index}}' >
+    <swiper-item class="swiper-item-seleced" >
+      <text 
+        class='{{subordinate==index?"selected":""}}'
+        bindtap="swiperItem" data-id='{{index}}'
+        data-name='{{item}}'>{{item}}</text>
     </swiper-item>
   </block>
 </swiper>

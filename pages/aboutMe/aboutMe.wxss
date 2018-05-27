@@ -1,1 +1,71 @@
 /* pages/aboutMe/aboutMe.wxss */
+@import '../../style/weui.wxss';
+page{
+  background-color:#F8F8F8;
+}
+.top{
+  height:40vh;
+  width: 100%;
+  position: relative;
+  background: #fff;
+}
+.menu{
+  background-color:#F8F8F8; 
+}
+.top .chat_face{
+  width:18vh;
+  height: 18vh;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin: auto;
+  position: absolute;
+  border-radius: 50%;
+  border:3px solid #e0e0e0;
+}
+.chat_face_image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.chat_face_name{
+  color: #353535;
+  position: absolute;
+  left:0;
+  right:0;
+  top: 105%;
+  text-align: center;
+  font-size: 13pt;
+}
+
+.binding{
+  height: 30vw;  
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;  
+}
+.binding button{
+  width: 45%;
+}
+.menu-chunk{
+  margin:5px 0;
+  background: #fff;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  padding:0 20px;
+}
+.menu-chunk:active{
+    background: #e6e6e6;
+}
+.menu-chunk text{
+  color: #353535;
+  margin-left: 10px;
+}
+
+.menu-chunk image{
+  height: 8vw;
+  width:  8vw;
+}

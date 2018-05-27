@@ -1,2 +1,15 @@
-<!--pages/aboutMe/aboutMe.wxml-->
-<text>pages/aboutMe/aboutMe.wxml</text>
+<view class='top'>
+  <view class='chat_face' wx:if="{{whetherLogIn}}">
+    <image class="chat_face_image" src='{{userInfo.avatarUrl}}'></image>
+    <text class='chat_face_name'>{{userInfo.nickName}}</text>
+  </view>
+  <view class='binding' wx:if="{{!whetherLogIn}}">
+    <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo">绑定微信登陆</button>
+  </view>
+</view>
+<view class='menu'>
+  <view class='menu-chunk' wx:for='{{menus}}' bindtap=''>
+    <image src='{{item.icon}}'></image>
+    <text>{{item.title}}</text>
+  </view>
+</view>
