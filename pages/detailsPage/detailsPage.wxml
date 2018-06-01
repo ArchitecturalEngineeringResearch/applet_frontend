@@ -1,0 +1,43 @@
+<view class='account'>
+  <image class='left' src="{{}}"></image>
+  <view class='right'>
+    <view class='user'>
+      <text>酷酷的藤</text>
+      <text class='date'>3小时前来过</text>
+    </view>
+    <view class='loca'>
+      <text>成都市双流县xxxx</text>
+      <text>≈30公里</text>
+    </view>
+  </view>
+</view>
+<view class='content'>
+  我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家
+</view>
+<view class='comment'>
+<text class="title">留言(3)</text>
+  <view class='comment-chunk'>
+
+  </view>
+</view>
+<view class='fixed-bottom'>
+  <view class='fixed-bottom-chunk'>
+    <view class='fa {{isCollect?"fa-star-o":"fa-star fa-star-color"}} fa-lg'></view>
+    <text>收藏</text>
+  </view>
+  <view class='fixed-bottom-chunk'>
+    <view class='fa  fa-share-alt fa-lg'></view>
+    <text>分享</text>
+  </view>
+  <view class='fixed-bottom-chunk'>
+    <view class='fa fa-commenting-o fa-lg'></view>
+    <text>留言</text>
+  </view>
+  <view class='fixed-bottom-chunk '>
+    <view class='fa {{isPraise?"fa-thumbs-o-up":"fa-thumbs-up fa-thumbs-up-color"}} fa-lg'></view>
+    <text>2</text>
+  </view>
+  <view class="call">
+    <text>联系Ta</text>
+  </view>
+</view>

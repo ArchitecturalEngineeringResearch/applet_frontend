@@ -5,19 +5,20 @@
   <text style='color:{{switchoverStatus?"":"#09bb07"}}'>需求</text>
 </view>
 <view class="section">
-  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
-    <view class="picker">
+  <text class="sel-title">点击选择大类</text>
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}" bindtap='openPicker' bindcancel='openPicker'>
+    <view class="picker {{openPicker?'':'picker-open'}}">
       {{array[index]}}
     </view>
   </picker>
 </view>
-<swiper class='swiper'>
-  <block wx:for='{{menus}}' wx:key='{{index}}' >
-    <swiper-item class="swiper-item-seleced" >
-      <text 
-        class='{{subordinate==index?"selected":""}}'
-        bindtap="swiperItem" data-id='{{index}}'
-        data-name='{{item}}'>{{item}}</text>
-    </swiper-item>
-  </block>
-</swiper>
+<view class='swiper'>
+  <text class="sel-title">滑动后点击具体</text>
+  <swiper>
+    <block wx:for='{{menus}}' wx:key='{{index}}'>
+      <swiper-item class="swiper-item-seleced">
+        <text style='{{subordinate==index?"color:#09bb07":""}}' bindtap="swiperItem" data-id='{{index}}' data-name='{{item}}'>{{item}}</text>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>

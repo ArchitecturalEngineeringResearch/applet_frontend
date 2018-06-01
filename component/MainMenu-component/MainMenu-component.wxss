@@ -1,17 +1,27 @@
 /* component/MainMenu-component/MainMenu-component.wxss */
-.swiper{
+
+.swiper {
   height: 100%;
   position: absolute;
   width: 35%;
   right: 0;
 }
-.picker{
-  color:#353535;
-}
-.section{
+
+.swiper swiper {
   height: 100%;
   position: absolute;
-  width: 20%;
+  width: 100%;
+  right: 0;
+}
+
+.picker {
+  color: #353535;
+}
+
+.section {
+  height: 100%;
+  position: absolute;
+  width: 25%;
   right: 0;
   left: 0;
   margin: auto;
@@ -19,19 +29,32 @@
   align-items: center;
   justify-content: center;
 }
-swiper-item{
+
+.sel-title {
+  font-size: 8pt;
+  position: absolute;
+  color: #888;
+  top: 0px;
+  padding-left: 3px;
+  border-left: 3px solid #09bb07;
+}
+
+swiper-item {
   display: table;
   text-align: center;
 }
-.selected{
-  color: #09bb07
+
+.selected {
+  color: #09bb07;
 }
-swiper-item text{
+
+swiper-item text {
   display: table-cell;
   vertical-align: middle;
-  color:#888888;
+  color: #888;
 }
-.switchover{
+
+.switchover {
   position: absolute;
   left: 10px;
   top: 0;
@@ -39,26 +62,28 @@ swiper-item text{
   margin: auto 0;
   width: 33%;
   border-radius: 100px;
-  border:1px solid #09bb07;
+  border: 1px solid #09bb07;
   height: 55%;
-  display:table;
+  display: table;
   background: #09bb07;
-  box-shadow: 1px 1px 1px 0px rgba(0,0,0,0.3) inset
+  box-shadow: 1px 1px 1px 0px rgba(0, 0, 0, 0.3) inset;
 }
-.switchover .ball{
+
+.switchover .ball {
   position: absolute;
-  background: #ffffff;
+  background: #fff;
   height: 100%;
   width: 50%;
   border-radius: 100px;
-  transition:all 0.4s ease-in;
+  transition: all 0.4s ease-in;
 }
-.switchover  text{
+
+.switchover  text {
   text-align: center;
-  display:table-cell;
-  vertical-align:middle;
-  font-size:11pt;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 11pt;
   position: relative;
   color: #e8e8e8;
-  transition:all 0.4s ease-in 100ms;
+  transition: all 0.4s ease-in 100ms;
 }

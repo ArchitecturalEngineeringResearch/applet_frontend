@@ -2,7 +2,7 @@
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
     <view class="weui-cell__bd">
-      <input class="weui-input" placeholder="输入不超过20个文字" maxlength="20" bindinput='titleV'/>
+      <input class="weui-input" placeholder="输入不超过20个文字" maxlength="20" bindinput='titleV' />
     </view>
   </view>
 </view>
@@ -19,21 +19,58 @@
   </radio-group>
 </view>
 <view class="weui-cells__title">点击选择位置</view>
-<map id="map" longitude="{{location.longitude}}" latitude="{{location.latitude}}" scale="17" bindcontroltap="controltap" markers="{{markers}}"   show-location class='map'
-  bindtap='location'></map>
+<map id="map" longitude="{{location.longitude}}" latitude="{{location.latitude}}" scale="17" bindcontroltap="controltap" markers="{{markers}}" show-location class='map' bindtap='location'></map>
 <view class="weui-cells__title">详细描述</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell">
     <view class="weui-cell__bd">
-      <textarea class="weui-textarea" placeholder="请输入文本" bindinput="contentV" style="height: 5.3em" cursor-spacing='100' adjust-position='true'/>
+      <textarea class="weui-textarea" placeholder="请输入文本" bindinput="contentV" style="height: 5.3em" cursor-spacing='100' adjust-position='true' />
     </view>
   </view>
 </view>
+
 <view class="weui-cells__title">联系电话</view>
 <view class="weui-cells weui-cells_after-title">
   <view class="weui-cell weui-cell_input">
     <view class="weui-cell__bd">
-      <input class="weui-input" placeholder="电话"  type="number"  bindinput='phoneV'/>
+      <input class="weui-input" placeholder="电话" type="number" bindinput='phoneV' />
+    </view>
+  </view>
+</view>
+<view class="weui-cells">
+  <view class="weui-cell">
+    <view class="weui-cell__bd">
+      <view class="weui-uploader">
+        <view class="weui-uploader__hd">
+          <view class="weui-uploader__title">图片上传</view>
+          <view class="weui-uploader__info">1/6</view>
+        </view>
+        <view class="weui-uploader__bd">
+          <view class="weui-uploader__files" id="uploaderFiles">
+            <view class="weui-uploader__file">
+              <image class="weui-uploader__img" src="../../resource/image/pic_160.png" mode="aspectFill" />
+            </view>
+          </view>
+          <view class="weui-uploader__input-box">
+            <view class="weui-uploader__input" bindtap="chooseImage"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-cells__title">选择类型</view>
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_select">
+    <view class="weui-cell__hd weui-cell__hd_in-select-after">
+      <view class="weui-label">选择类</view>
+    </view>
+    <view class="weui-cell__bd">
+      <picker mode="multiSelector" bindcolumnchange="columnchange" range="{{multiple}}" bindchange="pickerChange">
+        <view class="weui-select weui-select_in-select-after">
+          {{multiple[0][workType[0]]}} - {{multiple[1][workType[1]]}}
+        </view>
+      </picker>
     </view>
   </view>
 </view>

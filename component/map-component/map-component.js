@@ -4,10 +4,10 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    switchoverStatus:{
-      type:Boolean,
-      vaule:true,
-      observer: function (oldVal){
+    switchoverStatus: {
+      type: Boolean,
+      vaule: true,
+      observer: function (oldVal) {
         //开关数据变化
         this.getData()
       }
@@ -17,12 +17,12 @@ Component({
    * 组件的初始数据
    */
   data: {
-    longitude:'',
-    latitude:'',
-    controls:'',
-    markers:[ ],
+    longitude: '',
+    latitude: '',
+    controls: '',
+    markers: [],
   },
-  ready(){
+  ready() {
     //初始化定位
     this.goLocation();
   },
@@ -37,15 +37,15 @@ Component({
 
     },
     controltap(e) {
-      switch (e.controlId){
+      switch (e.controlId) {
         case 0:
-        //定位
+          //定位
           this.goLocation();
-        break;
+          break;
       }
     },
-    goLocation(){
-      let location = new Promise((resolve,reject)=>{
+    goLocation() {
+      let location = new Promise((resolve, reject) => {
         wx.getLocation({
           type: 'gcj02',
           success: resolve
@@ -68,23 +68,24 @@ Component({
           {
             iconPath: "/resource/image/map/灯泡.png",
             id: 1,
-            latitude: this.data.latitude-0.001,
+            latitude: this.data.latitude - 0.001,
             longitude: this.data.longitude - 0.001,
             width: 24,
-            height: 24
+            height: 24,
+            callout: { borderRadius: 5, content: '创意园创意园创意园创意园创意园创意园创意', padding: 10, display: 'BYCLICK', bgColor: '#8d8d8d', color:'#ffffff'}
           }
         ]
       });
       //初始化地图信息
       wx.getSystemInfo({
-        success:(res)=>{
+        success: (res) => {
           this.setData({
             controls: [{
               id: 0,
               iconPath: '/resource/image/tabBar/定位.png',
               position: {
                 left: 5,
-                top: (res.windowHeight - res.windowHeight * 0.1) * 0.99 - 40,
+                top: (res.windowHeight - res.windowHeight * 0.1) * 0.79 - 40,
                 width: 40,
                 height: 40
               },
@@ -94,8 +95,8 @@ Component({
         }
       })
     },
-    getData(){
-      if (this.data.switchoverStatus){
+    getData() {
+      if (this.data.switchoverStatus) {
         this.setData({
           markers: [
             {
@@ -124,7 +125,7 @@ Component({
             }
           ]
         });
-      }else{
+      } else {
         this.setData({
           markers: [
             {

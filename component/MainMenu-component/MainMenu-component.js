@@ -7,40 +7,45 @@ Component({
   properties: {
 
   },
-
   /**
    * 组件的初始数据
    */
   data: {
     array: config.work_group,
     menus: config.work_type_tree[0].childs,
-    index:0,
-    subordinate:0,//二级菜单
-    switchoverStatus:true, //true服务 false需求
+    index: 0,
+    subordinate: 0,//二级菜单
+    switchoverStatus: true, //true服务 false需求
+    openPicker:true
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    switchover(){
+    switchover() {
       //开关
       this.setData({
         switchoverStatus: !this.data.switchoverStatus
       })
-      this.triggerEvent('blockevent', { switchoverStatus: this.data.switchoverStatus});
+      this.triggerEvent('blockevent', { switchoverStatus: this.data.switchoverStatus });
     },
-    swiperItem(e){
-      console.log(e.currentTarget.dataset.id)
+    swiperItem(e) {
+      //二级
+      let id = e.currentTarget.dataset.id ;
       this.setData({
-        subordinate: e ? e.currentTarget.dataset.id:0
+        subordinate: id
       })
-      console.log(this.data.subordinate == e.currentTarget.dataset.id)
     },
-    bindPickerChange(e){
+    bindPickerChange(e) {
       this.setData({
-        menus:config.work_type_tree[e.detail.value].childs,
+        menus: config.work_type_tree[e.detail.value].childs,
         index: e.detail.value,
+      })
+    },
+    openPicker(){
+      this.setData({
+        openPicker: !this.data.openPicker
       })
     }
   }

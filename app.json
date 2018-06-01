@@ -2,6 +2,8 @@
   "pages": [
     "pages/mainMap/mainMap",
     "pages/publish/publish",
+
+    "pages/detailsPage/detailsPage",
     "pages/message/message",
     "pages/aboutMe/aboutMe",
     "pages/listDetails/listDetails"
