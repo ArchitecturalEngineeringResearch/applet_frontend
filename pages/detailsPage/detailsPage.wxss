@@ -1,8 +1,9 @@
 /* pages/detailsPage/detailsPage.wxss */
 
-page{
-  background-color:#F8F8F8;
+page {
+  background-color: #f8f8f8;
 }
+
 .fixed-bottom {
   position: fixed;
   bottom: 0px;
@@ -11,13 +12,17 @@ page{
   border-top: 1px solid #e7e7eb;
   display: flex;
   align-items: center;
+  justify-content: space-between
 }
-.fa-star-color{
-  color:#ffc53f;
+
+.fa-star-color {
+  color: #ffc53f;
 }
-.fa-thumbs-up-color{
-  color:#09bb07;
+
+.fa-thumbs-up-color {
+  color: #09bb07;
 }
+
 .call {
   background: #09bb07;
   height: 80%;
@@ -25,6 +30,8 @@ page{
   color: #fff;
   display: flex;
   align-items: center;
+  float: right;
+  right: 0px;
 }
 
 .call text {
@@ -32,15 +39,23 @@ page{
   width: 100%;
 }
 
-.fixed-bottom-chunk{
-   height: 100%;
-   width: 17vw;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
+.p-type {
+  color: #eb6303;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12pt;
 }
-.fixed-bottom-chunk view{
+
+.fixed-bottom-chunk {
+  height: 100%;
+  width: 17vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fixed-bottom-chunk view {
   width: 50%;
   height: 50%;
   display: flex;
@@ -48,87 +63,155 @@ page{
   line-height: 100%;
   align-items: center;
   justify-content: center;
-
 }
-.fixed-bottom-chunk text{
-  color: #888888;
+
+.fixed-bottom-chunk text {
+  color: #888;
   font-size: 10pt;
 }
 
 .account {
   height: 10vh;
-  background-color: #fff;
-  margin: 0 0 5px 0;
   display: flex;
   align-items: center;
   padding-left: 10px;
   padding-right: 10px;
+  padding-top: 10px;
+}
+
+.top {
   border-bottom: 1px solid #e7e7eb;
-  padding-bottom: 10px;
+  margin: 0 0 5px 0px;
+  background-color: #fff;
 }
 
 .account .left {
   border-radius: 50%;
-  background: rebeccapurple;
   height: 10vh;
   width: 10vh;
+}
+
+.top-footer {
+  display: flex;
+  font-size:8pt;
+  color:#888;
+  justify-content:space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+}
+.top-footer> view{
+   display: flex;
+   align-items: center;
 }
 
 .account .right {
   margin-left: 5px;
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   height: 100%;
 }
 
 .account .right {
-  flex-grow:1;
+  flex-grow: 1;
   height: 100%;
 }
-.right .user{
+
+.right .user {
   display: flex;
   align-items: center;
-  justify-content:space-between;
-  flex-grow:1;
+  justify-content: space-between;
+  flex-grow: 1;
 }
 
-.right .loca{
-  flex-grow:1;
-  color:#888888;
+.right .loca {
+  flex-grow: 1;
+  color: #888;
   font-size: 8pt;
   display: flex;
   justify-content: space-between;
 }
-.right .loca:nth-child(1){
 
-}
-.right .loca:nth-child(2){
-
-}
-.date{
-    color:#888888;
-    font-size: 10pt;
+.right .loca:nth-child(1) {
 }
 
-.content{
-  background: #fff;
-  padding: 8px;
-  color: #353535;
-  font-size: 12pt;
+.right .loca:nth-child(2) {
 }
 
-.comment{
-  background: #fff;
-  padding: 8px;
-  color: #353535;
-  font-size: 12pt;
-}
-
-.comment .title{
+.date {
+  color: #888;
   font-size: 10pt;
-  color:#888888;
+}
+
+.content {
+  background: #fff;
+  padding: 8px;
+  color: #353535;
+  font-size: 12pt;
+}
+
+.comment {
+  background: #fff;
+  padding: 8px;
+  color: #353535;
+  font-size: 12pt;
+}
+
+.comment .title {
+  font-size: 10pt;
+  color: #888;
   margin-bottom: 5px;
 }
-.comment-chunk{
-  height: 10vh;
+
+.comment-chunk {
+  min-height: 10vh;
+  padding: 5px 0 2px 0;
+}
+.comment-chunk-top{
+  display: flex;
+}
+.comment-chunk-top-right{
+  display: flex;
+  flex-direction: column;
+  width: 85vw;
+}
+.comment-chunk-top-left{
+  width: 15vw;
+  display: flex;
+  justify-content:center;
+}
+.comment-chunk-top-right{
+  font-size: 12pt;
+}
+.comment-chunk-top-right text:nth-child(1){
+  font-size: 9pt;
+  color: #888;
+}
+.comment-chunk-top-left> image{
+  width:12vw;
+  height:12vw;
+  background:rgba(204,204,204,1);
+  border-radius:50%;
+}
+.comment-chunk-footer{
+  padding-left: 15vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.comment-chunk-footer .date{
+  font-size: 8px;
+}
+.reply-box{
+  padding-left: 15vw;
+}
+.reply-box-chunk{
+  background: #EEEEEE;
+  border-radius: 3px;
+  padding: 8px;
+  font-size: 12px;
+  color: #888;
+}
+.reply-main{
+ color: #0CC8A0;
 }

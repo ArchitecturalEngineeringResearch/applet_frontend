@@ -1,9 +1,8 @@
 {
   "pages": [
     "pages/mainMap/mainMap",
-    "pages/publish/publish",
-
     "pages/detailsPage/detailsPage",
+    "pages/publish/publish",
     "pages/message/message",
     "pages/aboutMe/aboutMe",
     "pages/listDetails/listDetails"
@@ -15,7 +14,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "color": "#888888",
+    "color": "#333333",
     "selectedColor": "#09bb07",
     "list": [
       {
@@ -25,16 +24,10 @@
         "text": "地图找人"
       },
       {
-        "iconPath": "/resource/image/tabBar/发布活动.png",
-        "selectedIconPath": "/resource/image/tabBar/发布活动选中.png",
+        "iconPath": "/resource/image/tabBar/发布.png",
+        "selectedIconPath": "/resource/image/tabBar/发布选中.png",
         "pagePath": "pages/publish/publish",
         "text": "发布"
-      },
-      {
-        "iconPath": "/resource/image/tabBar/信息.png",
-        "selectedIconPath": "/resource/image/tabBar/信息选中.png",
-        "pagePath": "pages/message/message",
-        "text": "信息"
       },
       {
         "iconPath": "/resource/image/tabBar/个人信息.png",

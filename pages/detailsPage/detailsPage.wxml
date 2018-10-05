@@ -1,41 +1,74 @@
-<view class='account'>
-  <image class='left' src="{{}}"></image>
-  <view class='right'>
-    <view class='user'>
-      <text>酷酷的藤</text>
-      <text class='date'>3小时前来过</text>
+<view class='top'>
+  <text class='p-type'>#找驾驶员-运输直升机驾驶员#</text>
+  <view class='account'>
+    <image class='left' src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg"></image>
+    <view class='right'>
+      <view class='user'>
+        <text>酷酷的藤</text>
+        <text class='date'>3小时前来过</text>
+      </view>
+      <view class='loca'>
+        <text >发帖时间：2018.12.10</text>
+        <text>≈30公里</text>
+      </view>
     </view>
-    <view class='loca'>
-      <text>成都市双流县xxxx</text>
-      <text>≈30公里</text>
+  </view>
+  <view class='content'>
+    职位要求：
+    1、持有CAAC认可的直升机商用驾驶员执照并具有安全飞行时间100小时以上飞行经历；
+    2、持有民航飞行员Ⅰ级体检合格证；
+    3、熟悉通用航空飞行规章及行业规范，无不良飞行记录；
+    4、已与原单位解除劳动合同或原单位已同意流动优先；
+    5、应聘人员请在简历中注明飞行经历，飞行时间。
+  </view>
+  <view class='top-footer'>
+    <view>
+      <text class='iconfont icon-dingwei'></text>
+      <text>成都市双流区华阳界道</text>
+    </view> 
+    <view>
+      <text class='iconfont icon-liulan'></text>
+      <text> 103</text>
     </view>
   </view>
 </view>
-<view class='content'>
-  我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家我阿斯顿静安寺大家
-</view>
-<view class='comment'>
-<text class="title">留言(3)</text>
-  <view class='comment-chunk'>
 
+<view class='comment'>
+  <text class="title">留言(3)</text>
+  <!-- 一级评论块 -->
+  <view class='comment-chunk'>
+    <view class='comment-chunk-top'>
+      <view class='comment-chunk-top-left'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330935&di=99cb6fc64d8f995828fa6fc5c42a52ab&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Ff2deb48f8c5494ee55c7df3c27f5e0fe99257e2a.jpg'></image>
+      </view>
+      <view class='comment-chunk-top-right'>
+        <text class='username'>lenlee</text>
+        <text class='comment-chunk-top-right-content'>电话详聊！</text>
+      </view>
+    </view>
+    <view class='comment-chunk-footer'>
+      <text class='date'>8-12 8:30</text>
+      <text class='iconfont icon-chat'></text>
+    </view>
+    <view class='reply-box'>
+      <view class='reply-box-chunk'>
+         回复<text class='reply-main'>lenlee</text>：好的！
+      </view>
+    </view>
   </view>
 </view>
 <view class='fixed-bottom'>
   <view class='fixed-bottom-chunk'>
-    <view class='fa {{isCollect?"fa-star-o":"fa-star fa-star-color"}} fa-lg'></view>
+    <view class='iconfont icon-dianzan1'></view>
     <text>收藏</text>
   </view>
   <view class='fixed-bottom-chunk'>
-    <view class='fa  fa-share-alt fa-lg'></view>
+    <view class='iconfont icon-Group-'></view>
     <text>分享</text>
   </view>
   <view class='fixed-bottom-chunk'>
-    <view class='fa fa-commenting-o fa-lg'></view>
+    <view class='iconfont icon-chat'></view>
     <text>留言</text>
-  </view>
-  <view class='fixed-bottom-chunk '>
-    <view class='fa {{isPraise?"fa-thumbs-o-up":"fa-thumbs-up fa-thumbs-up-color"}} fa-lg'></view>
-    <text>2</text>
   </view>
   <view class="call">
     <text>联系Ta</text>

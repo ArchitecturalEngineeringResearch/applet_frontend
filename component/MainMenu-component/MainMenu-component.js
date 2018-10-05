@@ -13,7 +13,7 @@ Component({
   data: {
     array: config.work_group,
     menus: config.work_type_tree[0].childs,
-    index: 0,
+    index: 0,//父节点选中的
     subordinate: 0,//二级菜单
     switchoverStatus: true, //true服务 false需求
     openPicker:true
@@ -30,17 +30,18 @@ Component({
       })
       this.triggerEvent('blockevent', { switchoverStatus: this.data.switchoverStatus });
     },
-    swiperItem(e) {
+    selItem(e) {
       //二级
-      let id = e.currentTarget.dataset.id ;
       this.setData({
-        subordinate: id
+        subordinate: e.detail.value
       })
     },
     bindPickerChange(e) {
+      //父级发生改变
       this.setData({
         menus: config.work_type_tree[e.detail.value].childs,
         index: e.detail.value,
+        subordinate:0,
       })
     },
     openPicker(){

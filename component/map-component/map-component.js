@@ -85,7 +85,7 @@ Component({
               iconPath: '/resource/image/tabBar/定位.png',
               position: {
                 left: 5,
-                top: (res.windowHeight - res.windowHeight * 0.1) * 0.79 - 40,
+                top: (res.windowHeight - res.windowHeight * 0.1) * 0.60 - 40,
                 width: 40,
                 height: 40
               },

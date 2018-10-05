@@ -4,6 +4,7 @@
     "usingComponents": {
       "map-component": "../../component/map-component/map-component",
       "detailsCard-component": "../../component/detailsCard-component/detailsCard-component",
-      "mainMenu-component": "../../component/MainMenu-component/MainMenu-component"
+      "mainMenu-component": "../../component/MainMenu-component/MainMenu-component",
+      "mainCard-component":"../../component/mainCard-component/mainCard-component"
     }
 }

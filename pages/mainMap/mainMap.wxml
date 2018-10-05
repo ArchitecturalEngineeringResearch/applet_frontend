@@ -1,13 +1,9 @@
-<view class='menu-box'>
+  <view class='menu-box'>
   <mainMenu-component bindblockevent="blockevent"></mainMenu-component>
 </view>
 <view class='map-box'>
   <map-component switchoverStatus="{{switchoverStatus}}"></map-component>
 </view>
-<view class='card'>
-  <view class='text'>
-    <text class='title'>水电维修</text>
-    <text class='describe '>专业水电维修联系我</text>
-  </view>
-  <view class='button'></view>
+<view class='card-box'>
+  <mainCard-component dataList="{{}}"> </mainCard-component>
 </view>

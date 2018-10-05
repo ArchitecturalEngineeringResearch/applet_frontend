@@ -1,0 +1,130 @@
+/* component/mainCard-component/mainCard-component.wxss */
+@import '../../style/xiaogongicon.wxss';
+
+.card-per {
+  width: 100%;
+  height: 100%;
+}
+.icon-09{
+  color: #EB6303;
+  font-size: 25pt;
+}
+.like{
+  color: #ffeb00;
+}
+.card {
+  background: #fff;
+  padding: 8pt;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head .avatar {
+  display: flex;
+  align-items: center;
+}
+
+.head .avatar image {
+  display: inline-block;
+  border-radius: 50%;
+  width: 35pt;
+  height: 35pt;
+}
+
+.head .avatar text {
+  display: inline-block;
+  color: #000;
+  margin-left: 5pt;
+}
+
+
+.type-text {
+  color: #eb6303;
+  display: inline-block;
+}
+
+.body {
+  font-size: 10pt;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  word-break: break-all;
+  text-align: left;
+}
+
+.bottom {
+  margin-bottom: 3pt;
+}
+
+.location {
+  display: flex;
+  justify-content: start;
+  padding: 2pt;
+}
+
+.location .icon {
+  display: inline-block;
+  width: 5pt;
+  height: 5pt;
+}
+
+.location text {
+  display: inline-block;
+}
+
+.location {
+  font-size: 8pt;
+}
+
+.icon-to-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon-to-page > view {
+  flex-grow: 80;
+  display: flex;
+}
+
+.icon-to-page > view > view {
+  display: flex;
+  align-items: center;
+  margin-right: 10vw;
+  width: 10vw;
+}
+
+.icon-to-page view view .text {
+  display: inline-block;
+  font-size: 8pt;
+  margin-left: 5pt;
+}
+
+.details {
+  text-align: right;
+  flex-grow: 20;
+  font-size: 8pt;
+}
+
+@media screen and (max-width: 320px) {
+  .card {
+   padding:1pt;
+  }
+  .head .avatar image{
+    width: 25pt;
+    height: 25pt;
+  }
+  .icon-09{
+    color: #EB6303;
+    font-size: 20pt;
+  }
+}

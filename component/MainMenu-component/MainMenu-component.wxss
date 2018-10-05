@@ -1,10 +1,14 @@
 /* component/MainMenu-component/MainMenu-component.wxss */
 
-.swiper {
+.section-r {
   height: 100%;
   position: absolute;
   width: 35%;
   right: 0;
+  margin:auto;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .swiper swiper {

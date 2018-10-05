@@ -9,7 +9,7 @@
 </view>
 <view class='menu'>
   <view class='menu-chunk' wx:for='{{menus}}' bindtap=''>
-    <image src='{{item.icon}}'></image>
+    <text class='iconfont {{item.icon}}'></text>
     <text>{{item.title}}</text>
   </view>
 </view>

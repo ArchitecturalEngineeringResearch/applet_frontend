@@ -12,13 +12,11 @@
     </view>
   </picker>
 </view>
-<view class='swiper'>
-  <text class="sel-title">滑动后点击具体</text>
-  <swiper>
-    <block wx:for='{{menus}}' wx:key='{{index}}'>
-      <swiper-item class="swiper-item-seleced">
-        <text style='{{subordinate==index?"color:#09bb07":""}}' bindtap="swiperItem" data-id='{{index}}' data-name='{{item}}'>{{item}}</text>
-      </swiper-item>
-    </block>
-  </swiper>
+<view class='section-r'>
+  <text class="sel-title">点击选择具体工作</text>
+  <picker bindchange="selItem" value="{{subordinate}}" range="{{menus}}"bindtap='openPicker' bindcancel='openPicker'>
+    <view class="picker {{openPicker?'':'picker-open'}}">
+      {{menus[subordinate]}}
+    </view>
+  </picker>
 </view>
