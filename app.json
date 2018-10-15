@@ -5,6 +5,10 @@
     "pages/publish/publish",
     "pages/message/message",
     "pages/aboutMe/aboutMe",
+    "pages/aboutMe/comment/comment",
+    "pages/aboutMe/record/record",
+    "pages/aboutMe/collection/collection",
+    "pages/aboutMe/userInfo/userInfo",
     "pages/listDetails/listDetails"
   ],
   "window": {

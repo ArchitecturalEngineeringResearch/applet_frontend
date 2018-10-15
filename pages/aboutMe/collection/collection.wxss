@@ -1,0 +1,25 @@
+@import '../../../style/xiaogongicon.wxss';
+@import '../../../component/mainCard-component/mainCard-component.wxss';
+
+page{
+  height: 100%;
+  background-color: #f8f8f8;
+}
+.wrap-box{
+  height: 100%;
+  overflow-y: scroll;
+}
+.card{
+  height: auto;
+  margin-top: 8pt;
+}
+.time{
+  font-size: 8pt;
+}
+.img-wrap image{
+  width: 60pt;
+  height: 60pt;
+  padding-right: 10pt;
+  margin-top: 5pt;
+  vertical-align: middle;
+}

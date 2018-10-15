@@ -8,7 +8,7 @@
   </view>
 </view>
 <view class='menu'>
-  <view class='menu-chunk' wx:for='{{menus}}' bindtap=''>
+  <view class='menu-chunk' wx:for='{{menus}}' wx:key="{{item.title}}" bindtap='jumpTo' data-url='{{item.url}}'>
     <text class='iconfont {{item.icon}}'></text>
     <text>{{item.title}}</text>
   </view>

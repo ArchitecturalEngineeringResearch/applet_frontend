@@ -1,0 +1,40 @@
+<view class='collection-box'>
+<block wx:for="{{list}}" wx:key="{{item.userName}}">
+  <view class='card'>
+        <view class='head'>
+          <text class='type-text'>{{item.type}}</text>
+          <text class='time'>{{item.time}}</text>
+        </view>
+        <view class='body'>
+          {{item.content}}
+        </view>
+        <view class='img-wrap' wx:if="{{item.images}}">
+          <block  wx:for="{{item.images}}">
+            <image src="{{item}}"></image>
+          </block>
+        </view>
+        <view class='bottom'>
+          <view class='location'>
+            <text class='iconfont icon-dingwei'></text>
+            <text>成都市双流区华阳界道</text>
+          </view>
+          <view class='icon-to-page'>
+            <view>
+              <view>
+                <text class='iconfont icon-dianzan1 {{true?"like":" "}}'></text>
+                <text class='text'></text>
+              </view>
+              <view>
+                <text class='iconfont icon-liulan'></text>
+                <text class='text'>20</text>
+              </view>
+              <view>
+                <text class='iconfont icon-chat'></text>
+                <text class='text'>0</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+</view>

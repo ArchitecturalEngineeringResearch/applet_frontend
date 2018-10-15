@@ -1,7 +1,7 @@
 const own_menus = [
-  { title: '发布记录', icon: 'icon-jilu-bangong' },
-  { title: '我的收藏', icon: 'icon-dianzan' },
-  { title: '评论 / 回复', icon: 'icon-pinglun' },
+  { title: '发布记录', icon: 'icon-jilu-bangong', url:'record/record'},
+  { title: '我的收藏', icon: 'icon-dianzan', url: 'collection/collection'},
+  { title: '评论 / 回复', icon: 'icon-pinglun', url: 'comment/comment'},
 ]
 const work_type_tree = [
   {

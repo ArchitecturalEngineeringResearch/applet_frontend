@@ -1,0 +1,85 @@
+<view class='wrap'>
+  <view class='top'>
+    <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg'></image>
+    <view class='amount'>
+      <view class='amount-group'>
+        <text class='group-title'>发表数</text>
+        <text class='number'>2</text>
+      </view>
+      <view class='amount-group center'>
+        <text class='group-title'>阅读量</text>
+        <text class='number'>2345</text>
+      </view>
+      <view class='amount-group'>
+        <text class='group-title'>收藏量</text>
+        <text class='number'>123</text>
+      </view>
+    </view>
+  </view>
+  <view class='card-wrap'>
+    <block wx:for='{{list}}' wx:key='{{item.userName}}'>
+      <view class='card'>
+        <view class='head'>
+          <view class='avatar'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg'></image>
+            <text>{{item.userName}}</text>
+          </view>
+          <text bindtap='callPhone' data-phone='18140455970' class='iconfont icon-09'></text>
+        </view>
+        <view class='body'>
+          <text class='type-text'>#{{item.type}}#</text> {{item.content}}
+        </view>
+        <view class='bottom'>
+          <view class='location'>
+            <text class='iconfont icon-dingwei'></text>
+            <text>成都市双流区华阳界道</text>
+          </view>
+          <view class='icon-to-page'>
+            <view>
+              <view>
+                <text class='iconfont icon-dianzan1 {{true?"like":" "}}'></text>
+                <text class='text'></text>
+              </view>
+              <view>
+                <text class='iconfont icon-liulan'></text>
+                <text class='text'>20</text>
+              </view>
+              <view>
+                <text class='iconfont icon-chat'></text>
+                <text class='text'>0</text>
+              </view>
+            </view>
+            <text class='details' bindtap="jumpDetails" data-pid='1'>查看详情 >></text>
+          </view>
+        </view>
+      </view>
+    </block>
+  </view>
+
+  <view class='bottom-comment'>
+    <view class='title'>评论</view>
+    <view class='comment-content'>
+      <view class='comment-item'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg'></image>
+        <view class='item-content'>
+          <view class='user-name'>倩娃儿</view>
+          <view class='msg-content'>在哪里</view>
+          <view class='msg-info'><text>8-12 8:30</text><text class='iconfont icon-chat'></text></view>
+          <view class='division-line'></view>
+        </view>
+      </view>
+      <view class='comment-item'>
+        <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg'></image>
+        <view class='item-content'>
+          <view class='user-name'>倩娃儿</view>
+          <view class='msg-content'>在哪里</view>
+          <view class='msg-info'><text>8-12 8:30</text><text class='iconfont icon-chat'></text></view>
+
+          <view class='msg-replay' wx:if="true">回复<text>倩娃儿</text>：华阳</view> <!-- wx:if条件渲染还没有条件噢 -->
+
+          <view class='division-line'></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

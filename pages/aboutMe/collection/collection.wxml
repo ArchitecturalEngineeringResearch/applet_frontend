@@ -1,0 +1,43 @@
+<view class='wrap-box'>
+<block wx:for="{{list}}" wx:key="{{item.userName}}">
+  <view class='card' data-pid='1' bindtap='jumpTo'>
+        <view class='head'>
+          <view class='avatar'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg'></image>
+            <text>{{item.userName}}</text>
+          </view>
+          <text class='time'>{{item.time}}</text>
+        </view>
+        <view class='body'>
+          <text class='type-text'>#{{item.type}}#</text> {{item.content}}
+        </view>
+        <view class='img-wrap' wx:if="{{item.images}}">
+          <block  wx:for="{{item.images}}" wx:key="{{item.images}}">
+            <image src="{{item}}"></image>
+          </block>
+        </view>
+        <view class='bottom'>
+          <view class='location'>
+            <text class='iconfont icon-dingwei'></text>
+            <text>成都市双流区华阳界道</text>
+          </view>
+          <view class='icon-to-page'>
+            <view>
+              <view>
+                <text class='iconfont icon-dianzan1 {{true?"like":" "}}'></text>
+                <text class='text'></text>
+              </view>
+              <view>
+                <text class='iconfont icon-liulan'></text>
+                <text class='text'>20</text>
+              </view>
+              <view>
+                <text class='iconfont icon-chat'></text>
+                <text class='text'>0</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </block>
+</view>

@@ -1,0 +1,30 @@
+<view class='wrap-box'>
+<block wx:for="{{list}}" wx:key="{{item.userName}}">
+  <view class='card'>
+        <view class='head'>
+          <view class='avatar'>
+            <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg'></image>
+            <view class='user-info'>
+              <text>{{item.userName}}</text>
+              <text class='time'>{{item.time}}</text>
+            </view>
+          </view>
+          <button class='replay-btn'>回复</button>
+        </view>
+        <view class='content'>
+          <text class='replay'>
+            <text wx:if="{{item.sendTo}}">回复<text class="send-to">@{{item.sendTo}}</text>：</text>{{item.answer}}
+          </text>
+          <view class='replay-from'>
+              <image src='https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1538560330934&di=e1313e4c022d4a6b6f3418c43b0d608e&imgtype=0&src=http%3A%2F%2Fimgsrc.baidu.com%2Fimgad%2Fpic%2Fitem%2Fa6efce1b9d16fdfa0e8417cbbe8f8c5494ee7b2f.jpg'></image>
+              <view class='msg-from'>
+                <view class='msg-at'>@周健</view>
+                <view class='body'>
+                  <text class='type-text'>#{{item.type}}#</text> {{item.content}}
+                </view>
+              </view>
+          </view>
+        </view>
+      </view>
+    </block>
+</view>

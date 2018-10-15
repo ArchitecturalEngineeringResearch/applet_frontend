@@ -35,5 +35,12 @@ Page({
         userInfo: userInfo
       })
     }
+  },
+  jumpTo:function(e){
+    let url = e.currentTarget.dataset.url;
+    wx.navigateTo({
+      url: url
+    })
   }
+
 })
